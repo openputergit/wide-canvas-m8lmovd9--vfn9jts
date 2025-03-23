@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVAM'E-BOOK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .book-card {
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center py-4">SHIVAM'E-BOOK</h1>
+            <nav class="flex justify-center space-x-4 py-3">
+                <a href="#" class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition">HOME</a>
+                <a href="#" class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition">ABOUT SHIVAM</a>
+                <a href="#" class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition">SHIVAM'S E-BOOK</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Book Description -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <p class="text-gray-700">A book is a collection of pages fastened along one edge, usually protected by a cover, containing written or printed content.</p>
+                <p class="text-gray-700">A physical object of pages (often paper)bound together, typically containing text or images, or a written work or composition.</p>
+                <p class="text-gray-700">It can also refer to a literary or scientific work, such as a novel, textbook, or dictionary, distinguished by its length and form.</p>
+                <p class="text-gray-700">A book can also refer to a major section or division of a longer work.</p>
+                <p class="text-gray-700">A book is an object recording information in the form of printed writing or images.</p>
+            </div>
+        </section>
+
+        <!-- Book Overview Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-8">OVERVIEW OF ALL BOOK</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Book Card 1 -->
+                <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e" alt="Book Cover" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-xl mb-2">MINDSET</h3>
+                        <p class="text-gray-600 mb-4">BY Carol Dweck</p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e" alt="Book Cover" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-xl mb-2">MINDSET</h3>
+                        <p class="text-gray-600 mb-4">BY Carol Dweck</p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e" alt="Book Cover" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-xl mb-2">MINDSET</h3>
+                        <p class="text-gray-600 mb-4">BY Carol Dweck</p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Add click event listeners to view detail buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Book details will be displayed here');
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
